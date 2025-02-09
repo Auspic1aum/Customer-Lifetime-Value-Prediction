@@ -1,0 +1,52 @@
+columns:
+  -   country: object
+  -   product: object
+  -   entitlement_period: object
+  -   marketing_channel: object
+  -   family_type: object
+  -   hourspendonapp: object
+  -   promo_applied: object
+  -   cross_sell_flag: object
+  -   customer_support__satisfaction: int64
+  -   usage_frequency_per_day: float64
+  -   asp: float64
+  -   previous_year_retention: float64
+  -   retention_rate_yr_1: float64
+  -   quarter: object
+
+
+numerical_columns:
+  - customer_support__satisfaction
+  - usage_frequency_per_day
+  - asp
+  - previous_year_retention
+  - retention_rate_yr_1
+
+
+categorical_columns:
+  - country
+  - product
+  - entitlement_period
+  - marketing_channel
+  - hourspendonapp
+  - promo_applied
+  - cross_sell_flag
+  - quarter
+
+oh_columns:
+  - country
+  - product
+  - marketing_channel
+  - family_type
+  - promo_applied
+  - cross_sell_flag
+
+or_columns:
+  - hourspendonapp
+
+num_features:
+  - customer_support__satisfaction
+  - usage_frequency_per_day
+  - asp
+  - previous_year_retention
+
